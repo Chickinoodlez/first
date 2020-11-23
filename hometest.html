@@ -1,0 +1,80 @@
+
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="hometest.css">
+    </head>
+    
+    
+    <body style="background-color:rgba(76, 134, 209, 0.932);">
+    
+        <div class="header1"> 
+          <h1> Website name </h1>  
+          <p> About your website</p>
+        </div>
+    
+        <div class="header2">
+            <h1> Website name</h1>
+            <p> About your website</p>
+        </div>
+    
+        <div class="topnav">
+            <a href="home.html"> 
+                <img src="home.png" class="resize-home-icon">
+            </a>
+            <a href="about.html" class="links"> About Me</a>
+            <a href="" class="links"> Gallery</a>
+            <a href="test.html" target="_blank" class="links"> Practice</a>
+        </div>
+    
+        <div class="main">
+            <div class="leftcol">
+                <div class="card1">
+                    <h2 id="shadow">Slideshow</h2>
+                    <section>
+                        <img class="myslides" src="images1.jpg"> 
+                        <img class="myslides" src="images2.jpg"> 
+                        <img class="myslides" src="images3.jpg">
+                    </section>
+                     <button onclick="document.getElementById('demo').innerHTML=Date()" class="centerbutton">What is the time</button>
+                    <p id="demo"></p>
+                </div>
+            </div>
+    
+            <div class="rightcol"></div>
+        </div>
+    
+    
+    
+        <script>
+            var count=0;
+            show();
+            
+        function show() {
+            var i=0;
+            var x = document.getElementsByClassName("myslides");
+    
+            for(i=0; i< x.length; i++)
+            
+            {
+                x[i].style.display="none";
+            }
+    
+            count++;
+    
+            if(count > x.length)
+            {
+                count=1
+            }
+    
+            x[count-1].style.display="block";
+            setTimeout(show, 1000);
+        }   
+        </script>
+    
+    
+        
+    </body>
+    
+    
+    </html>

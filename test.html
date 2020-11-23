@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <title>Website title</title>
+           
+           <link href="text.css" rel="stylesheet">
+           
+           
+           <style>
+                /*
+                    comment
+                 */   
+
+           </style>         
+        </head>
+
+        <body style="background-color: rgb(11, 255, 44);">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/DGIXT7ce3vQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div style="border-style: dotted; padding:20px">
+        <video width="400" height="300"controls>
+            <source src="2020-11-06 12-05-51.mp4" type="video/mp4">
+        </video>
+        </div>    
+            
+            
+            
+                <h1 style="font-size: 100px; font-weight:900;color:rgb(196, 18, 18)">heading 1</h1>
+                <h2>heading 2</h2>
+                <h4>heading 4</h4>
+                <h6>heading 6</h6>
+
+        <!--hi-->
+            <p style="text-align:center;padding:100px;margin-left:30px;border-style:double;">
+                hi welcome to my test website
+            </p>
+
+            <a href="https://amazon.com" target="_blank">Click me!!!</a>
+        
+        <a href="https://google.com" target="_blank">
+            <img src="images.jpg" width="100px" height="100px" style="border-radius:30%">
+        </a>
+            
+        <table style="width:100%;text-align:center">
+        
+        <tr>
+            <th style="border:1px solid rgb(245, 2, 2);
+            border-collapse:collapse;"> code</th>
+            <th> hi</th>
+        </tr>
+        
+        <tr>
+            <td>o1</td>
+            <td>hi</td>
+        </tr>
+       
+        <tr>
+            <td> 02</td>
+            <td> bye</td>
+        </tr>
+
+
+        </table>
+        
+        <ol style="color:blue">
+        <li style="color:crimson">hi</li>
+        <li>hi1</li>
+        <li>h2</li>
+        </ol>
+
+        <ul>
+            <li>hi4</li>
+            <li>hi5</li>
+            <li>hi6</li>
+        </ul>
+        
+    <div class="city"> 
+        <h2 style="font-size: 100px; font-weight:900;color:red">hi</h2>
+        <p> Hi this is random text</p>
+    </div>
+    
+    
+    <div class="city"> 
+        <h2 style="font-size: 100px; font-weight:900;color:rgb(238, 255, 0)">hi</h2>
+        <p> Hi this is random text</p>
+    </div>
+    
+    
+    <div class="city"> 
+        <h2 style="font-size: 100px; font-weight:900;color:rgb(11, 7, 233)">hi</h2>
+        <p> Hi this is random text</p>
+    </div>
+    
+    <p id="shadow">text shadow effect </p>
+
+    <form>
+        <label for="fname">First name</label>
+        <input type="text" id="fname" name="fname">
+        <input type="submit" value="Submit" onclick="AlertMe();">
+        <button type="button"> Click me!</button>
+    </form>
+    
+    <h3>Welcome to mouse hover!!!</h3>
+    
+    <p id="sum"></p>
+    <p id="name"></p>
+    <p id="product"></p>
+    <p id="demo"></p>
+    <button onclick="document.getElementById('demo').innerHTML=Date()">What is the time</button>
+    
+    <script>
+        var x=5;
+        var y=10
+        var z=x+y;
+        document.getElementById("sum").innerHTML="The sum is:"+z;
+
+
+
+        var name="Sajan";
+        document.getElementById("name").innerHTML = name
+
+
+        function product(p1,p2){
+            return p1 * p2;
+        }
+
+
+        document.getElementById("product").innerHTML = product(445,52)
+
+
+        function AlertMe()
+        {
+            var name = document.getElementById("fname").value;
+            alert(name+ "Hello there!");
+            document.getElementById("fname").value="";
+            window.open('http://google.com', "_blank");
+        }
+
+
+
+    </script>
+
+
+
+    </body>
+</html>
+
+

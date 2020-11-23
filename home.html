@@ -1,0 +1,101 @@
+
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="home.css">
+</head>
+
+
+<body>
+
+    <div class="header1"> 
+      <h1> Website name </h1>  
+      <p> About your website</p>
+    </div>
+
+    <div class="header2">
+        <h1> Website name</h1>
+        <p> About your website</p>
+    </div>
+
+    <div class="topnav">
+        <a href="home.html"> 
+            <img src="home.png" class="resize-home-icon">
+        </a>
+        <a href="about.html"> About Me</a>
+        <a href="#gallery"> Gallery</a>
+        <a href="test.html" target="_blank"> Practice</a>
+    </div>
+
+    <div class="main">
+        <div class="leftcol">
+            <div class="cardi">
+                <h2 class="h2center">Slideshow</h2>
+                <section>
+                    <img class="myslides" src="images1.jpg"> 
+                    <img class="myslides" src="images2.jpg"> 
+                    <img class="myslides" src="images3.jpg">
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h2 style="text-align: center;"> Social media</h2>
+        <a href="https://twitter.com" target="_blank"><img class="social-media" src="twitter.png"></a>
+        <a href="https://instagram.com" target="_blank"><img class="social-media" src="instagram.jpg"> </a>
+        <a href="https://snapchat.com" target="_blank"><img class="social-media" src="snapchat.png"> </a>
+
+    </div>
+
+    <div class="for-videos">
+        <p id="gallery" class="text-style">Gallery view</p>
+        <iframe class="shape" width="560" height="315" src="https://www.youtube.com/embed/7_1aS8yLeGA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="shape" width="560" height="315" src="https://www.youtube.com/embed/7_1aS8yLeGA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="shape" width="560" height="315" src="https://www.youtube.com/embed/7_1aS8yLeGA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="shape" width="560" height="315" src="https://www.youtube.com/embed/7_1aS8yLeGA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+d
+    </div>
+
+    <script>
+        var count=0;
+        show();
+        
+    function show() {
+        var i=0;
+        var x = document.getElementsByClassName("myslides");
+
+        for(i=0; i< x.length; i++)
+        
+        {
+            x[i].style.display="none";
+        }
+
+        count++;
+
+        if(count > x.length)
+        {
+            count=1
+        }
+
+        x[count-1].style.display="block";
+        setTimeout(show, 1000);
+    }   
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>
